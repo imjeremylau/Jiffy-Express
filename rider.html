@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riders</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="welcome">
+             <img class="jiffyPic" src="/img/welcome.png" alt="Welcome to Jiffy Express">
+            <h2>Welcome to JIFFY Express!</h2>
+        </div>
+       <hr><hr>
+       <div class="container">
+           
+    <h2 class="riderWelcome">Apply to join as one of our noble riders today!</h2>
+    <p class="riderJoin">Download our app or <a href = "mailto: jobs@jiffyexpress.com" class="email">e-mail us now!</a></p>
+
+    <hr><hr>
+    <div class="welcome">
+        <h2>Get directions for a pending order here.</h2>
+    </div>
+    <hr>
+    <br>
+    <div class="senderInputs">
+        <form action="">
+            <label for="trackingDirectionsID">Item type: </label>
+            <input type="text" id="trackingDirectionsID" placeholder="ID (eg: JIEX008)" required>   
+            <button type="button" class="btn btn-success" onclick="showDirections()"><span>Track!</span></button>
+        </form>
+    </div>
+
+        <div id="directionsMap" class="maps">
+            <iframe
+            class="maps"
+                width="600"
+                height="450"
+                style="border:1"
+                loading="lazy"
+                allowfullscreen
+                alt="Loading..."
+                src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAyn7a1Yn847Ex4WgAZ17p4QAWeA1a-iWc&origin=Kepong
+                &destination=Terminal+Bersepadu+Selatan
+                &avoid=tolls|highways">
+          </iframe>
+        </div>
+
+
+    <footer>
+            © Developed by Team Mailo
+    </footer>
+
+    <script src="jiffy.js"></script>
+</body>
+</html>

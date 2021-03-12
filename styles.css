@@ -1,0 +1,239 @@
+body {
+    background-image: url('/img/background.png');
+    color: white !important;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.senderInputs {
+    margin-top: 10px;
+    display: flex;
+}
+
+.senderLocation {
+    display: block;
+}
+
+input {
+    margin-left: 10px;
+    color:#1b0a00;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
+
+input[type=tel] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
+
+  input[type=email] {
+    box-sizing: border-box;
+    border: none;
+    color: black;
+  }
+
+.area {
+    display: none;
+}
+
+.area.active {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: block;
+}
+
+.receiverLocationInputs {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.insuranceInfo {
+    display: block;
+    margin-left: 5px;
+}
+
+.insuranceOption {
+    display: block;
+    margin-top: 10px;
+}
+
+.itemSW {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.submit-btn {
+    margin: 10px;
+
+}
+
+form {
+    margin-left: 50px;
+}
+
+label {
+    margin-right: 10px;
+    color: #FF914D;
+    font-size:medium;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.submitdialog {
+    color: black;
+}
+
+.insuranceDialog {
+    color: black;
+}
+
+.totalCostLine {
+    font-size: x-large;
+    font-weight: bold;
+    color: #FF914D;
+}
+
+.totalCost {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.labelOptions {
+    color:#FFB282;
+}
+
+.welcome {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.identitybutton {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+.identitybutton:hover {
+    background-color: #FFBF98;
+    color:#1b0a00;
+
+}
+  
+  .identitybutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .identitybutton span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .identitybutton:hover span {
+    padding-right: 25px;
+    font-weight: bold;
+  }
+
+  .identitybutton:active span {
+    padding-right: 25px;
+    font-weight: bold;
+  }
+  
+  .identitybutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .riderWelcome {
+      margin: 50px;
+      font-weight: bold;
+  }
+
+  .driverWelcome {
+    margin: 50px;
+    font-weight: bold;
+}
+
+  .riderJoin {
+      margin-left: 50px;
+      font-size: large;
+  }
+
+  .driverJoin {
+    margin-left: 50px;
+    font-size: large;
+}
+
+
+  .email {
+      color: #FFBF98;
+  }
+
+  .email:hover {
+      color: #f4511e;
+      text-decoration: none;
+  }
+
+  footer {
+      margin-top: 100px;
+      margin-bottom: 20px;
+  }
+
+  #map {
+      visibility: hidden;
+      margin: 20px;
+      border-radius: 5px;
+  }
+
+  #directionsMap {
+    visibility: hidden;
+    margin: 20px;
+    border-radius: 5px;
+  }
+
+  footer {
+      margin-left: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .identitybutton {
+      float: none;
+      width: 100%;
+    }
+
+    .maps {
+        width:100%;
+    }
+
+    .jiffyPic {
+        width: 100%;
+    }
+  }
